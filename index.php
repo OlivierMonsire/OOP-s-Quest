@@ -3,26 +3,20 @@
 
 require_once 'Bicycle.php';
 require_once 'Car.php';
+require_once 'Truck.php';
 
-$bike = new Bicycle(blue);
-$vroum = new Car(black, 5, electric);
+$bicycle = new Bicycle('blue', 1);
+echo $bicycle->forward();
+var_dump($bicycle);
 
-var_dump($bike);
 
-// Moving bike
-echo $bike->forward();
-echo '<br> Vitesse du vélo : ' . $bike->setCurrentSpeed . ' km/h' . '<br>';
-echo $bike->brake();
-echo '<br> Vitesse du vélo : ' . $bike->setCurrentSpeed . ' km/h' . '<br>';
-echo $bike->brake();
+$car = new Car('green', 4, 'electric');
+echo $car->forward();
+var_dump($car);
 
-var_dump($bike);
+$truck = new Truck('red', 2, 'fuel', 500);
+echo $car->forward();
+var_dump($truck);
 
-// Moving car
-echo $vroum->start();
-echo $vroum->forward();
-echo '<br> Vitesse de la voiture : ' . $bike->setCurrentSpeed . ' km/h' . '<br>';
-echo $vroum->brake();
-echo $vroum->start();
-echo '<br> Vitesse de la voiture : ' . $bike->setCurrentSpeed . ' km/h' . '<br>';
-echo $vroum->brake();
+var_dump(Car::ALLOWED_ENERGIES);
+var_dump(Truck::LOADING);
