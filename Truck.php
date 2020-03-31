@@ -39,7 +39,7 @@ class Truck extends Vehicle
     }
 
 
-    public function setStorageCapacity(string $storageCapacity): int
+    public function setStorageCapacity(string $storageCapacity): void
     {
         $this->storageCapacity = $storageCapacity;
         return $this;
