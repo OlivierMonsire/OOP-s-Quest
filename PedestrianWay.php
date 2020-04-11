@@ -18,7 +18,7 @@ final class PedestrianWay extends HighWay
 
     final public function addVehicle($vehicle): string {
         if ($vehicle instanceof NoMotorVehicle){
-            $this->currentVehicles= array_push($currentVehicles, $vehicle);
+            $this->setCurrentVehicles($vehicle);
             return "Your vehicle is added to the list";
         }
         else {
