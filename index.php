@@ -17,12 +17,20 @@ $car = new ElectricCar('red','4', 'electric');
 var_dump($car);
 
 $car->setParkBrake();
-echo $car-> start();
+$car->setParkBrake();
+
+try {
+   echo $car->start();
+}
+catch(exception $e){
+    $sentence .= 'My car drives like a donut!';
+}
+
+finally {
+    echo $sentence;
+}
 
 $autoroute = new MotorWay();
 var_dump($autoroute);
 echo $autoroute->addVehicle($car);
 var_dump($autoroute);
-
-
-

@@ -81,13 +81,6 @@ abstract class Car extends MotorVehicle
         else {
             $sentence .= "I'm already on the road !";
         }
-        try {
-            return $bool==true;
-        }
-        catch (exception $e){
-            $sentence .= "My car drives like a donut";
-        } finally {
             return $sentence;
-        }
     }
 }
