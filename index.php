@@ -13,10 +13,16 @@ $bicycle = new Bicycle('blue', 1);
 echo $bicycle->forward();
 var_dump($bicycle);
 
-$pouet = new ElectricCar('red','4', 'electric');
-var_dump($pouet);
+$car = new ElectricCar('red','4', 'electric');
+var_dump($car);
+
+$car->setParkBrake();
+echo $car-> start();
 
 $autoroute = new MotorWay();
 var_dump($autoroute);
-echo $autoroute->addVehicle($pouet);
+echo $autoroute->addVehicle($car);
 var_dump($autoroute);
+
+
+

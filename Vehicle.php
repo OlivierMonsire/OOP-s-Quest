@@ -48,6 +48,19 @@ abstract class Vehicle
         return $sentence;
     }
 
+    public function start()
+    {
+        $sentence = "";
+        if ($this->currentSpeed == 0) {
+            $this->currentSpeed++;
+            $sentence .= "Let's start!";
+        }
+        else {
+            $sentence .= "I'm already on the road !";
+        }
+        return $sentence;
+    }
+
     public function getCurrentSpeed(): int
     {
         return $this->currentSpeed;
