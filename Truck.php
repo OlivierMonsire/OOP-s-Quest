@@ -1,9 +1,9 @@
 <?php
 
 // Truck.php
-require_once 'Vehicle.php';
+require_once 'MotorVehicle.php';
 
-class Truck extends Vehicle
+final class Truck extends MotorVehicle
 {
     const LOADING = [
         'in filling',
@@ -42,6 +42,5 @@ class Truck extends Vehicle
     public function setStorageCapacity(string $storageCapacity): void
     {
         $this->storageCapacity = $storageCapacity;
-        return $this;
     }
 }

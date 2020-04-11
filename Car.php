@@ -1,9 +1,9 @@
 <?php
 
 // Car.php
-require_once 'Vehicle.php';
+require_once 'MotorVehicle.php';
 
-class Car extends Vehicle
+abstract class Car extends MotorVehicle
 {
     const ALLOWED_ENERGIES = [
         'fuel',

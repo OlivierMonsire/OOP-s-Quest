@@ -2,7 +2,7 @@
 
 // Vehicle.php
 
-class Vehicle
+abstract class Vehicle
 {
     /**
      * @var string
@@ -12,7 +12,7 @@ class Vehicle
     /**
      * @var integer
      */
-    protected $currentSpeed;
+    protected $currentSpeed = 0;
 
     /**
      * @var integer
@@ -89,4 +89,5 @@ class Vehicle
     {
         $this->nbWheels = $nbWheels;
     }
+
 }

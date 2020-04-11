@@ -4,6 +4,6 @@
 
 require_once 'NoMotorVehicle.php';
 
-final class Bicycle extends NoMotorVehicle
+final class Skateboard extends NoMotorVehicle
 {
 }
