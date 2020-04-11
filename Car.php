@@ -76,10 +76,10 @@ abstract class Car extends MotorVehicle
 
         elseif ($this->currentSpeed == 0) {
             $this->currentSpeed++;
-            $sentence .= "Let's start!";
+            $sentence = "Let's start!";
         }
         else {
-            $sentence .= "I'm already on the road !";
+            $sentence = "I'm already on the road !";
         }
             return $sentence;
     }

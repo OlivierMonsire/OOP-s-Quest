@@ -23,7 +23,7 @@ try {
    echo $car->start();
 }
 catch(exception $e){
-    $sentence .= 'My car drives like a donut!';
+    $sentence = 'My car drives like a donut!';
     $car -> setParkBrake();
 }
 
