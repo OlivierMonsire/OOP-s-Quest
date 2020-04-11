@@ -24,6 +24,7 @@ try {
 }
 catch(exception $e){
     $sentence .= 'My car drives like a donut!';
+    $car -> setParkBrake();
 }
 
 finally {
