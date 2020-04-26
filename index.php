@@ -8,30 +8,19 @@ require_once 'Truck.php';
 require_once 'ResidentialWay.php';
 require_once 'MotorWay.php';
 require_once 'PedestrianWay.php';
+require_once 'ElectricBike.php';
+require_once 'RechargeableInterface.php';
+require_once 'LightableInterface.php';
+require_once 'ChargingStation.php';
+
 
 $bicycle = new Bicycle('blue', 1);
-echo $bicycle->forward();
-var_dump($bicycle);
-
 $car = new ElectricCar('red','4', 'electric');
-var_dump($car);
 
-$car->setParkBrake();
-$car->setParkBrake();
-
-try {
-   echo $car->start();
-}
-catch(exception $e){
-    $sentence = 'My car drives like a donut!';
-    $car -> setParkBrake();
-}
-
-finally {
-    echo $sentence;
-}
-
-$autoroute = new MotorWay();
-var_dump($autoroute);
-echo $autoroute->addVehicle($car);
-var_dump($autoroute);
+echo $car->switchOn(). '<br>';
+echo $bicycle->switchOn(). '<br>';
+echo $bicycle->setDynamo(). '<br>';
+echo $bicycle->switchOn(). '<br>';
+echo $bicycle->forward(). '<br>';
+echo $bicycle->switchOn(). '<br>';
+echo  $bicycle->setDynamo(). '<br>';

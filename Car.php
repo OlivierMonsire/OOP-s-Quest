@@ -2,8 +2,9 @@
 
 // Car.php
 require_once 'MotorVehicle.php';
+require_once 'LightableInterface.php';
 
-abstract class Car extends MotorVehicle
+abstract class Car extends MotorVehicle implements LightableInterface
 {
     const ALLOWED_ENERGIES = [
         'fuel',
@@ -82,5 +83,15 @@ abstract class Car extends MotorVehicle
             $sentence = "I'm already on the road !";
         }
             return $sentence;
+    }
+
+    public function switchOn()
+    {
+        return true;
+    }
+
+    public function switchOff()
+    {
+        return false;
     }
 }
