@@ -29,5 +29,6 @@ echo  $bicycle->setDynamo(). '<br><br><br>';
 
 echo 'POO6:'. '<br><br><br>';
 
-echo Speedometer::myStaticMethod(10);
+echo Speedometer::convertKm(10). '<br>';
+echo Speedometer::convertMiles(6.21). '<br>';
 
